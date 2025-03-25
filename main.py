@@ -5,10 +5,8 @@ from passlib.context import CryptContext
 from jose import JWTError
 from datetime import datetime, timedelta
 from sqlalchemy import Column, Integer, String, create_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
-from sqlalchemy.orm import declarative_base
-
+from sqlalchemy.ext.declarative import declarative_base
 
 app = FastAPI()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
